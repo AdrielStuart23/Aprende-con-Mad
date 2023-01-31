@@ -1,0 +1,231 @@
+*{
+    border: none;
+    margin: none;
+    padding: none;
+}
+html{
+    background-color: rgba(0, 0, 0, 0.849);
+    scroll-behavior: smooth;
+}
+body{
+    width: 99%;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+/* encabezado de la pagina, imagen de logo, y menu de navegacion */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #363636;;
+    margin: 3% 0;
+    border-bottom: #f5cb22 solid 10px;
+}
+header .logo{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: #f5cb22  
+}
+header .logo img{
+    width: 100px;
+    height: 100px;
+    transform: scale(2);
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+    }
+header ul{
+    width: 30%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+
+}
+ul li  {
+    list-style: none;
+    font-size: 20px;
+    font-family:'Fredoka One', cursive; 
+}
+ul li a {
+       color: #f5cb22  ;
+    text-decoration: none;
+      padding: 20px;
+}
+/* boton aprender, efectos  */
+ .aprende:hover{
+    transition: all 500ms;
+	transform: rotatez(10deg);
+   
+    
+}
+ ul a:hover{
+    transition: all 500ms;
+    background-color: #f5cb22;
+    color: #363636;
+    
+}
+/* contenido superficial de la pagina */
+main{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+main >.primer .pregunta{
+    color: #f5cb22;
+    font-size: 25px;
+    font-family:'Fredoka One', cursive; ;
+    border-bottom: #363636 solid 5px;
+    margin: 1% 0;
+}
+main >.primer .fustracion{
+    color: #e0dada;
+    font-size: 25px;
+    font-family:'Fredoka One', cursive; 
+}
+.fustracion label img{
+    width: 30px;
+}
+main .verdad{
+    width: 25%;
+    margin: 2% 0;
+    filter: drop-shadow(0 2px 5px rgba(253, 251, 251, 0.808));  
+}
+.tranquilos{
+    width: 70%;
+    background-color: rebeccapurple;
+    display: flex;
+    flex-direction: column;
+}
+/* informacion personal de la compañia */
+.nosotros{
+    width: 90%;
+    border-bottom:#f5cb22 solid 5px;
+    margin: 1% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.nosotros h1{
+    font-size: 40px;
+    color: #f5cb22;
+    font-family:'Fredoka One', cursive; 
+    border-bottom: #363636 solid 5px;
+    width: 50%;
+    padding: 0px 0px 20px 0px ;
+}
+.nosotros p{
+    font-size: 25px;
+    color: #e0dada;
+    font-family:'Fredoka One', cursive; 
+}.nosotros .otros a{
+    color: #e0dada;
+    text-decoration: none; 
+    text-align: center;
+    
+}
+.nosotros .imagenn{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    align-self: center;
+}
+.nosotros .imagenn img{
+    width: 200px;
+    filter: drop-shadow(0 2px 5px rgba(253, 251, 251, 0.808));  
+
+}
+.nosotros .otros img{
+    width: 400px;
+    height: 250px;
+    display: flex;
+    margin: 2% 0 0 0;
+    border-radius: 10px;
+}
+.otros{
+    width: 100%;
+    display:flex;
+    justify-content: space-around;
+    margin: 2% 0;
+}
+.nosotros .otros img:hover{
+   
+  scale: 1.1;
+  transition: all 400ms;
+  filter: drop-shadow(0 2px 5px rgba(32, 30, 30, 0.808));  
+
+  
+
+}
+/* explicacion de como es nuestro metodo  */
+.metodo{
+    width: 90%;
+    border-bottom:#f5cb22 solid 5px;
+    display: flex;
+   justify-content: space-around;
+   align-items: center;
+    
+}
+.metodo h1{
+    font-size: 50px;
+    color: #f5cb22;
+    font-family:'Fredoka One', cursive;
+    width: 40%;
+    padding: 20px;
+}
+.metodo p{
+    font-size: 25px;
+    color: #e0dada;
+    font-family:'Fredoka One', cursive; 
+}
+.metodo p img{
+    width: 20px;
+}
+.metodo img{
+    width: 30%;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+}
+/* footer de la pagina,(mas) redes sociales, y algunas cosas mas */
+.mas{
+    width: 100%;
+    display: flex;
+    margin: 4% 0 0 0;
+    justify-content: space-around;
+    background-color: rgba(0, 0, 0, 0.534);
+    padding: 20px 0px;
+}
+.mas h2{
+    font-size: 30px;
+    color: #e0dada;
+    font-family: 'Fredoka One', cursive; 
+}
+.mas h3{
+    color: #e0dada;
+    font-family: 'Abel', sans-serif;
+    font-size: 15px;
+}
+.mas .foter2{
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    
+
+}
+.mas .foter2 .img{
+    width: 80%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+.mas .foter2 .img img{
+    width: 35%;
+    border: solid white;
+    background-color: white;
+}
+.mas .foter2 .img img:hover{
+    transition: all 300ms;
+    border:#f5cb22 solid ;
+    background-color:#f5cb22;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+}

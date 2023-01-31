@@ -1,0 +1,119 @@
+*{
+    border: none;
+    margin: none;
+    padding: none;
+}
+html{
+    background-color: rgba(0, 0, 0, 0.849);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    width: 99%;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+/* Diseño encabezdo, imagen de logo y opcion regresar  */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #363636;;
+    margin: 3% 0 0 0;
+    border-bottom: #f5cb22 solid 10px;
+}
+header .logo{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: #f5cb22  
+}
+header .logo img{
+    width: 100px;
+    height: 100px;
+    transform: scale(2);
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+    }
+header ul{
+    width: 30%;
+    display: flex;
+    align-self: center;
+    justify-content: space-around;
+
+}
+ul li  {
+    list-style: none;
+    font-size: 30px;
+    font-family:'Fredoka One', cursive; 
+}
+ul li a {
+       color: #f5cb22  ;
+    text-decoration: none;
+      padding: 40px;
+
+}
+ ul a:hover{
+    transition: all 500ms;
+    background-color: #f5cb22;
+    color: #363636;
+    filter: drop-shadow(0 2px 5px rgba(44, 42, 42, 0.7));
+
+
+}
+/* Selector de areas, fisica , hipotenusa y area */
+.seleccion{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    margin: 5% 0;
+}
+.area{
+    width: 80%;
+    justify-content: center;
+    text-align: center;
+    display: flex;
+    margin: 30px;
+}
+.area h2{
+    width: 100%;
+    padding: 20px;
+    filter: drop-shadow(0 2px 5px rgba(65, 57, 57, 0.7));
+
+}
+.area img{
+    position: relative;
+    overflow: hidden;
+    opacity: 75%s;
+    width: 100%;
+    height: 350px;
+}
+.area .letrasa{
+    width: 60%;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    align-self: center;
+    font-size: 30px;
+    font-family:'Fredoka One', cursive;
+    
+
+}
+.area:hover{
+    scale: 1.1;
+    transition: all 300ms;
+    filter: drop-shadow(0 2px 5px rgba(58, 47, 47, 0.7));
+
+}
+.area:hover h2{
+ background-color: #f5cb22;
+ cursor: pointer;
+transition: all 300ms;
+}

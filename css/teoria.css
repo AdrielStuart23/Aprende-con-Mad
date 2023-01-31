@@ -1,0 +1,416 @@
+*{
+    border: none;
+    margin: none;
+    padding: none;
+}
+html{
+    background-color: rgba(0, 0, 0, 0.849);
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    width: 99%;
+    display: flex;
+    align-items: center;
+   flex-direction: column;
+}
+/* encabezado de la pagina */
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background: #363636;;
+    margin: 3% 0 0 0;
+    border-bottom: #f5cb22 solid 10px;
+}
+header .logo{
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Fredoka One', cursive;
+    font-size: 30px;
+    color: #f5cb22  
+}
+header .logo img{
+    width: 100px;
+    height: 100px;
+    transform: scale(1.4);
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+    }
+header ul{
+    width: 30%;
+    display: flex;
+    align-self: flex-end;
+    justify-content: space-around;
+
+}
+header ul li  {
+    list-style: none;
+    font-size: 30px;
+    font-family:'Fredoka One', cursive; 
+}
+header ul li a  {
+       color: #f5cb22  ;
+    text-decoration: none;
+      padding: 20px;
+
+}
+  header ul a:hover{
+    transition: all 500ms;
+    background-color: #f5cb22;
+    color: #363636;
+}
+
+/* Sub menu de la pagina, para poder ver los contenidos de la pagina 
+sin tener que bajar mecanicamente */
+.submenu{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    font-family:'Fredoka One', cursive; 
+    border-bottom: #f5cb22 double 5px;
+    background-color:#363636;
+
+}
+.submenu ul{
+    width: 100%;
+    display:flex;
+    margin: auto;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.submenu ul li{
+    list-style: none;
+    padding: 10px;
+
+
+}
+.submenu ul li a{
+   color: white;
+   text-decoration: none;
+   padding: 10px;
+}
+.submenu ul li a:hover{
+    background-color: #f5cb22;
+    color: #363636;
+}
+/* un poco de infotmacion hacerca de la teoria de pitagora */
+.explicaciones{
+    width: 90%;
+    margin: 10%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-bottom:  #f5cb22 solid 10px;
+    padding: 20px;
+
+}
+.explicaciones .contenido{
+    width: 100%;
+    font-size: 29px;
+    color:white;
+    font-family: 'Fredoka One', cursive; 
+    display: flex;
+    justify-content: center;
+
+}
+.contenido img{
+
+    display: inline;
+}
+.contenido label img{
+    width: 3%;
+}
+.explicaciones .img{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.img img{
+    width: 15%;
+    scale: 1.4;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+}
+/* Informacion del teorema de pitagoras (donde podemos utilizar pitagoras) */
+.triangulo{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive; 
+}
+.triangulo h1{
+    color: #f5cb22;
+    width: 80%;
+
+    padding: 0px 0px 30px 0;
+}
+.triangulo .expli{
+    width: 100%;
+    display: flex;
+    background-color: #363636;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.expli p{
+    width: 60%;
+}
+.triangulo .expli img{
+    width: 30%;
+    filter: invert(7) sepia(9) hue-rotate(20deg);
+}
+.expli label{
+    background-color: #f5cb22;
+    color: #363636;
+}
+/* Evidencias de como encontrar un triangulo rectangulo  */
+.angulo{
+    width: 100%;
+    display: flex;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive; 
+    justify-content: space-around;
+    margin: 10% 0;
+    align-items: center;
+    background-color: #363636;
+  }
+.angulo img{
+    width: 30%;
+    filter: invert(7) sepia(9) hue-rotate(20deg);
+} 
+.angulo p{
+    width:60%;
+}
+.angulo label{
+    background-color: #f5cb22;
+    color: #363636;
+}
+/* Cual de estos triangulos es rectangulo, pregunta y eleccion de la respuesta  */
+.pregunta{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+.pregunta .eleccion{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+.eleccion img{
+    width: 30%;
+    background-color:#363636;
+    border:#f5cb22 solid 5px;
+    margin: 0 0 2% 0 ;
+}
+ .eleccion img:hover{
+    animation: tiembla 800ms infinite;
+    cursor: pointer;
+}
+@-webkit-keyframes tiembla{
+  50% { -webkit-transform:rotateZ( 0deg) scale(.9);} 
+  
+}
+.resultado{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+
+}
+.resultado img{
+    width: 70px;
+}
+/* Mad explicando algo diferente (nube pensamiento) */
+.explicaciones1{
+    width: 90%;
+    margin: 4% 0 ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+
+}
+.explicaciones1 .contenido1{
+    width: 100%;
+    font-size: 20px;
+    margin: auto ;
+    padding: 20px;
+    color:#363636;
+    font-family: 'Fredoka One', cursive; 
+    display: flex;
+    background-color:#f5cb22;
+    justify-content: center ;
+    clip-path: polygon(0 0, 100% 0, 100% 81%, 47% 80%, 7% 99%, 23% 82%, 0 80%);}
+.contenido1 label img{
+    width: 3%;
+}
+.explicaciones .img{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-start;
+}
+.img img{
+    width: 15%;
+    scale: 1.4;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+} 
+/* Cateto Abyacente, muestra de cual es    */
+.catetoa{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive; 
+    border-bottom:  #f5cb22 solid 10px;
+    margin: auto;
+}
+.catetoa h1{
+    color: #f5cb22;
+    width: 70%;
+    display:flex;
+    align-self: flex-end;
+    padding: 0px 0px 30px 0;
+    font-size: 40px;
+}
+.catetoa .expli{
+    width: 100%;
+    display: flex;
+    background-color: #363636;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.expli p{
+    width: 50%;
+}
+.catetoa .expli img{
+    width: 40%;
+    filter: invert(7) sepia(9) hue-rotate(20deg);
+}
+.expli label{
+    background-color: #f5cb22;
+    color: #363636;
+}
+/* Cateto Opuesto, muestra de cual es    */
+.catetoo{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive; 
+    border-bottom:  #f5cb22 solid 10px;
+}
+.catetoo h1{
+    color: #f5cb22;
+    width: 70%;
+    font-size: 40px;
+    display:flex;
+    align-self: flex-end;
+}
+.catetoo .expli{
+    width: 100%;
+    display: flex;
+    background-color: #363636;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.expli p{
+    width: 50%;
+}
+.catetoo .expli img{
+    width: 40%;
+    filter: invert(7) sepia(9) hue-rotate(20deg);
+}
+.expli label{
+    background-color: #f5cb22;
+    color: #363636;
+}
+/* Hipotenusa, muestra de cual es    */
+.hipotenu{
+    width: 90%;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-family: 'Fredoka One', cursive; 
+    border-bottom:  #f5cb22 solid 10px;
+
+}
+.hipotenu h1{
+    color: #f5cb22;
+    width: 70%;
+    display:flex;
+    align-self: flex-end;
+    font-size: 40px;
+
+}
+.hipotenu .hipoex{
+    width: 100%;
+    display: flex;
+    background-color: #363636;
+    align-items: center;
+    justify-content: space-around;
+}
+.hipoex p{
+    width: 50%;
+}
+.hipotenu .hipoex img{
+    width: 40%;
+    filter: invert(7) sepia(9) hue-rotate(20deg);
+}
+.hipoex label{
+    background-color: #f5cb22;
+    color: #363636;
+}
+/* Explicacion y ejemplo de donde podemos utilizar el teorema en la vida cotidiana  */
+.explicaciones3{
+    width: 100%;
+    margin: 4% 0 ;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+.explicaciones3 .contenido3{
+    width: 100%;
+    font-size: 20px;
+    margin: auto ;
+    padding: 20px;
+    color:#363636;
+    font-family: 'Fredoka One', cursive; 
+    display: flex;
+    background-color:#f5cb22;
+    justify-content: center;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 81%, 76% 82%, 83% 100%, 50% 82%, 0 80%);
+}   .explicaciones3 .img{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+
+}
+.explicaciones3 .img img{
+    width: 15%;
+    scale: 1.6;
+    filter: drop-shadow(0 2px 5px rgba(255, 255, 255, 0.7));
+}
